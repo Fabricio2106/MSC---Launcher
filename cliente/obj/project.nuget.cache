@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Tt+t2+ZBuyo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\Ciclo V\\Desarrollo de Servicios Web\\Microservicios-Launcher\\cliente\\cliente.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
