@@ -46,10 +46,10 @@ Gestiona los pedidos realizados por los clientes.
 - `DELETE /api/pedidos/{id}` - Eliminar un pedido
 
 **Características:**
-- ✅ Validación de datos
-- ✅ Validación de existencia antes de actualizar o eliminar
-- ✅ Manejo de errores con códigos HTTP correctos (400, 404, 500)
-- ✅ Logging de todas las operaciones
+- Validación de datos
+- Validación de existencia antes de actualizar o eliminar
+- Manejo de errores con códigos HTTP correctos (400, 404, 500)
+- Logging de todas las operaciones
 
 **Ejecución:**
 ```powershell
@@ -221,7 +221,7 @@ Cada microservicio se ejecutará en su propio puerto:
 
 ---
 
-## ⚠️ Importante - Submodulos Git
+## Importante - Submodulos Git
 
 > **Si se trabaja en el repositorio que tiene los sub-módulos, primero actualizar y hacer push en el sub-módulo y después en el repositorio principal.**
 >
@@ -243,6 +243,5 @@ Cada microservicio se ejecutará en su propio puerto:
 - Los errores están correctamente manejados con códigos HTTP estándar.
 - Se incluye **logging** para todas las operaciones críticas.
 
-## Autor
-
-Desarrollado como parte del Ciclo V de Microservicios.
+## Author
+- Fabricio Orihuela
