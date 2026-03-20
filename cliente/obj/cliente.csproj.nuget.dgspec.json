@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\Ciclo V\\Desarrollo de Servicios Web\\Microservicios-Launcher\\cliente\\cliente.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\Ciclo V\\Microservicios-Launcher\\cliente\\cliente.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\Ciclo V\\Desarrollo de Servicios Web\\Microservicios-Launcher\\cliente\\cliente.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Ciclo V\\Microservicios-Launcher\\cliente\\cliente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Ciclo V\\Desarrollo de Servicios Web\\Microservicios-Launcher\\cliente\\cliente.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Ciclo V\\Microservicios-Launcher\\cliente\\cliente.csproj",
         "projectName": "cliente",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\Ciclo V\\Desarrollo de Servicios Web\\Microservicios-Launcher\\cliente\\cliente.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Ciclo V\\Microservicios-Launcher\\cliente\\cliente.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\Ciclo V\\Desarrollo de Servicios Web\\Microservicios-Launcher\\cliente\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Ciclo V\\Microservicios-Launcher\\cliente\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,6 +47,22 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[10.0.5, )"
             }
           },
           "imports": [

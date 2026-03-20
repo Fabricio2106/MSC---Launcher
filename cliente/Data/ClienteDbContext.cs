@@ -27,6 +27,10 @@ namespace cliente.Data
                 entity.Property(e => e.Apellido)
                     .IsRequired()
                     .HasMaxLength(100);
+                
+                entity.Property(e => e.Edad)
+                    .IsRequired()
+                    .HasMaxLength(100);
 
                 entity.Property(e => e.Email)
                     .IsRequired()
@@ -37,12 +41,6 @@ namespace cliente.Data
 
                 entity.Property(e => e.Direccion)
                     .HasMaxLength(200);
-
-                entity.Property(e => e.FechaRegistro)
-                    .HasDefaultValueSql("GETUTCDATE()");
-
-                entity.Property(e => e.Activo)
-                    .HasDefaultValue(true);
             });
         }
     }

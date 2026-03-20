@@ -18,9 +18,7 @@ namespace cliente.Controllers
             _logger = logger;
         }
 
-        /// <summary>
         /// Obtiene todos los clientes
-        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetClientes()
         {
@@ -37,9 +35,7 @@ namespace cliente.Controllers
             }
         }
 
-        /// <summary>
         /// Obtiene un cliente por su ID
-        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<Cliente>> GetClienteById(int id)
         {
@@ -63,9 +59,7 @@ namespace cliente.Controllers
             }
         }
 
-        /// <summary>
-        /// Crea un nuevo cliente
-        /// </summary>
+        // Crea un nuevo cliente
         [HttpPost]
         public async Task<ActionResult<Cliente>> CreateCliente([FromBody] Cliente cliente)
         {
@@ -78,7 +72,6 @@ namespace cliente.Controllers
 
             try
             {
-                cliente.FechaRegistro = DateTime.UtcNow;
                 _context.Clientes.Add(cliente);
                 await _context.SaveChangesAsync();
 
@@ -92,9 +85,8 @@ namespace cliente.Controllers
             }
         }
 
-        /// <summary>
-        /// Actualiza un cliente existente
-        /// </summary>
+
+        // Actualiza un cliente existente
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCliente(int id, [FromBody] Cliente clienteActualizado)
         {
@@ -117,10 +109,10 @@ namespace cliente.Controllers
 
                 cliente.Nombre = clienteActualizado.Nombre;
                 cliente.Apellido = clienteActualizado.Apellido;
+                cliente.Edad = clienteActualizado.Edad; 
                 cliente.Email = clienteActualizado.Email;
                 cliente.Telefono = clienteActualizado.Telefono;
                 cliente.Direccion = clienteActualizado.Direccion;
-                cliente.Activo = clienteActualizado.Activo;
 
                 _context.Clientes.Update(cliente);
                 await _context.SaveChangesAsync();
@@ -135,9 +127,7 @@ namespace cliente.Controllers
             }
         }
 
-        /// <summary>
-        /// Elimina un cliente
-        /// </summary>
+        // Elimina un cliente
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCliente(int id)
         {
